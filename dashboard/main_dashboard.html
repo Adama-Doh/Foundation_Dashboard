@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Projects Dashboard | VFGH Foundation</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="../css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Vodafone Ghana Foundation</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+      data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="../index.html">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- SideBar Menu -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profiles.html">
+                <span data-feather="users"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Foundation Projects</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <!-- Adinkrahene Health -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/adinkra.html">
+                <span data-feather="layers"></span>
+                Adinkrahene Health
+              </a>
+            </li>
+
+            <!-- Birthday Star -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/birthday_stars.html">
+                <span data-feather="layers"></span>
+                Birthday Stars
+              </a>
+            </li>
+
+            <!-- Charity Projects -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/charity.html">
+                <span data-feather="layers"></span>
+                Charity Projects
+              </a>
+            </li>
+
+            <!-- Healthfest -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/healthfest.html">
+                <span data-feather="layers"></span>
+                Healthfest
+              </a>
+            </li>
+
+            <!-- Healthline Medical Call Center -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/healthline.html">
+                <span data-feather="layers"></span>
+                Healthline
+              </a>
+            </li>
+
+            <!-- Homecoming -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/homecoming.html">
+                <span data-feather="layers"></span>
+                Homecoming
+              </a>
+            </li>
+
+            <!-- ICT Hubs -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/ict_hub.html">
+                <span data-feather="layers"></span>
+                ICT Hubs
+              </a>
+            </li>
+
+            <!-- Instant Schools -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/instant_schools.html">
+                <span data-feather="layers"></span>
+                Instant Schools
+              </a>
+            </li>
+
+            <!-- Kickstarter -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/kickstarter.html">
+                <span data-feather="layers"></span>
+                Kickstarter
+              </a>
+            </li>
+
+            <!-- KindRed -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/kindRed.html">
+                <span data-feather="layers"></span>
+                KindRed
+              </a>
+            </li>
+
+            <!-- M-Mama -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/m_mama.html">
+                <span data-feather="layers"></span>
+                M-Mama
+              </a>
+            </li>
+
+            <!-- Vodafone 3-2-1 -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects/vodafone_3_2_1.html">
+                <span data-feather="layers"></span>
+                Vodafone 3-2-1
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <!-- SideBar Menu -->
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Education</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Health</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Others</button>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="checkbox" checked autocomplete="off"> View All
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+
+        <!-- <h2>Section title</h2> -->
+        <div class="album py-5 bg-light">
+          <div class="container">
+
+            <!-- Adinkrahene Health-->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Adinkrahene Health">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Adinkrahene Health</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/adinkra.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/adinkra.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Birthday Star -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Birthday Stars">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Birthday Stars</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/birthday_stars.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/birthday_stars.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Charity Projects-->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Charity Projects">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Charity Projects</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/charity.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/charity.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Healthfest -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder:Healthfest">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Healthfest</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/healthfest.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/healthfest.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Healthline Medical Call Center -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder:Healthline">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Healthline</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/healthline.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/healthline.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Homecoming -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Homcoming">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Homcoming</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/homecoming.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/homecoming.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ICT Hubs -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: ICT Hubs">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">ICT
+                      Hubs</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/ict_hub.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/ict_hub.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instant School -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Instant Schools">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Instant Schools</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/instant_schools.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/instant_schools.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kickstarter -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Kickstarter">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Kickstarter</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/kickstarter.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/kickstarter.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- KindRed -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: KindRed">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">KindRed</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/kindRed.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/kindRed.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- M-Mama -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: M-Mama">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">M-Mama</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/m_mama.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/m_mama.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vodafone 3-2-1 -->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                    aria-label="Placeholder: Vodafone 3-2-1">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Vodafone 3-2-1</text>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">Project Description goes here ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" onclick='window.location = "projects/vodafone_3_2_1.html"'
+                          class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" onclick='window.location = "projects/vodafone_3_2_1.html"'
+                          class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">status</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
