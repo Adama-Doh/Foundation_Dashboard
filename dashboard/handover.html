@@ -65,12 +65,12 @@
                 Dashboard
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="profiles.html">
                 <span data-feather="users"></span>
                 Profile <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link active" href="handover.html">
                 <span data-feather="file-text"></span>
@@ -87,7 +87,7 @@
             <li class="nav-item">
               <a class="nav-link" href="visibility.html">
                 <span data-feather="globe"></span>
-                visibility
+                Visibility
               </a>
             </li>
 
@@ -98,8 +98,8 @@
       <!-- SideBar Menu -->
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel"></h5>
@@ -110,51 +110,131 @@
             <form method="post" action="../classes/add/add.php">
               <div class="modal-body">
                 <div class="form-group">
-                  <label> Name </label>
-                  <input type="text" id="f_name" name="f_name" class="form-control" placeholder="Full Name">
+                  <label> Leave Requester </label>
+                  <input type="text" class="form-control" placeholder="Full Name">
                 </div>
                 <div class="row">
                   <div class="col form-group">
-                    <label>Emp. ID</label>
-                    <input type="number" id="e_number" name="e_number" class="form-control" placeholder="xxx-xxx-xx">
+                    <label>Date</label>
+                    <input type="date"class="form-control">
                   </div>
                   <div class="col form-group">
-                    <label>Job Title</label>
-                    <input type="text" id="j_title" name="j_title" class="form-control" placeholder="Title">
+                    <label>Leave Start Date</label>
+                    <input type="date" class="form-control">
+                  </div>
+                  <div class="col form-group">
+                    <label>Leave End Date</label>
+                    <input type="date" class="form-control">
                   </div>
                 </div>
 
+                <h6>Section 1 - Projects</h6>
+                <!-- 1st Row -->
                 <div class="row">
                   <div class="col form-group">
-                    <label>Reason for handover</label>
+                    <label>Project</label>
                     <select id="inputState" class="form-control">
-                      <option>Vacation</option>
-                      <option>Transfer</option>
-                      <option>End of Employment</option>
-                      <option>Others</option>
+                      <option>General</option>
+                      <option>Homecoming</option>
+                      <option>Birthday Stars</option>
+                      <option>Instant Schools</option>
+                      <option>M-Mama</option>
+                      <option>Charity Activities</option>
+                      <option>Big Data</option>
+                      <option>Sustainability</option>
+                      <option>Purpose-Led</option>
                     </select>
                   </div>
+                  <!-- Status -->
+                  <div class="col form-group">
+                    <label>Status of project</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <!-- Priority Level -->
+                  <div class="col form-group">
+                    <label>Priority Level</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
 
-                <!--Project Name -->
-                <div class="form-group">
-                  <label>Project Name</label>
-                  <input type="text" class="form-control" name="p_name" id="p_name" placeholder="eg. Homecoming">
+                <!--2nd Row -->
+                
+                  <!-- Descripton -->
+                  <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                  </div>
+                  <!-- Action -->
+                  <div class="form-group">
+                    <label>Action Required</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                  </div>
+                  <!-- Stakeholder -->
+                  <div class="form-group">
+                    <label>Stakeholders and contact info</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                  </div>
+                
+                <!-- 3rd Row -->
+                <div class="row">
+                  <div class="col form-group">
+                    <label>Handover To</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <!-- Deadline -->
+                  <div class="col form-group">
+                    <label>Deadline</label>
+                    <input type="date" class="form-control">
+                  </div>
                 </div>
 
-                <!-- Textarea -->
-                <div class="form-group">
-                  <label>Project Description</label>
-                  <textarea class="form-control" name="p_description" id="p_description" rows="2"
-                    placeholder="What is the project about?"></textarea>
+                <h6 class="mt-4">Section 2 - Meetings</h6>
+                <!-- 1st Row -->
+                <div class="row">
+                  <div class="col form-group">
+                    <label>Meetings</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <!-- Date for next meeting -->
+                  <div class="col form-group">
+                    <label>Date for next meeting</label>
+                    <input type="date" class="form-control">
+                  </div>
+                  <!-- Status -->
+                  <div class="col form-group">
+                    <label>Status of project</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
 
-                <!-- Textarea -->
-                <div class="form-group">
-                  <label>Project Status</label>
-                  <textarea class="form-control" name="p_status" id="p_status" rows="3"
-                    placeholder="What is the status of the project?"></textarea>
+                <!--2nd Row -->
+                <div class="row">
+                  <!-- Outstanding actions from previous meeting -->
+                  <div class="col form-group">
+                    <label>Outstanding actions from previous meeting</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                  </div>
                 </div>
+                
+                <!-- 3rd Row -->
+                <div class="row">
+                  <!-- Update to be given at next meeting -->
+                  <div class="col form-group">
+                    <label>Update to be given at next meeting</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                  </div>
+                </div>
+                
+                <!-- 4th Row -->
+                <div class="row">
+                  <!-- Attendess -->
+                  <div class="col form-group">
+                    <label>Attendess</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+
+                
 
               </div>
 
@@ -173,19 +253,21 @@
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2 text-danger">Handing Over Report</h1>
+          <!-- Modal Button -->
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
               <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal"
-                data-target="#exampleModal">
+                data-target=".bd-example-modal-lg">
                 <span data-feather="plus"></span>
                 Add</button>
             </div>
           </div>
+          <!-- Modal Button -->
         </div>
 
         <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
 
-        <!-- <h2>Section title</h2> -->
+        <h4>Section 1 - Projects</h4>
         <div class="album py-5 bg-light">
           <div class="container">
 
@@ -194,15 +276,65 @@
               <table class="table table-striped table-sm">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Job Title</th>
-                    <th>Reason for Handover</th>
-                    <th>Project Name</th>
-                    <th>Project Status</th>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Status of project</th>
+                    <th>Action required</th>
+                    <th>Stakeholders and info</th>
+                    <th>Hand over to</th>
+                    <th>Priority Level</th>
+                    <th>Deadline</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
+          </div>
+        </div>
+        <h4 class="mt-4">Section 2 - Meetings</h4>
+        <div class="album py-5 bg-light">
+          <div class="container">
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>Meeting</th>
+                    <th>ate for next meeting</th>
+                    <th>Outstanding actions</th>
+                    <th>Status</th>
+                    <th>Update for next meeting</th>
+                    <th>Attendess</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
